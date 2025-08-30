@@ -1,5 +1,5 @@
 # Multi-stage build for Spring Boot
-FROM maven:3.9-openjdk-21-slim AS build
+FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /app
 
 # Copy pom.xml first for better layer caching
@@ -11,7 +11,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Runtime stage
-FROM openjdk:21-jre-slim
+FROM eclipse-temurin:21-jre
 WORKDIR /app
 
 # Create non-root user for security
