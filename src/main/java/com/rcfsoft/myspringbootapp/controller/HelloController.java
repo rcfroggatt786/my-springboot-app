@@ -18,9 +18,9 @@ public class HelloController {
     @GetMapping("/")
     public Map<String, Object> home() {
         Map<String, Object> response = new HashMap<>();
-        response.put("message", "Hello from Spring Boot!");
+        response.put("message", "Assalaamu 3alaykum!");
         response.put("timestamp", System.currentTimeMillis());
-        response.put("version", "1.0.0");
+        response.put("version", "1.0.1");
         return response;
     }
 
