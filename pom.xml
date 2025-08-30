@@ -10,9 +10,9 @@
     </parent>
 
     <groupId>com.rcfsoft</groupId>
-    <artifactId>my-springboot-app</artifactId>
+    <artifactId>myspringbootapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>my-springboot-app</name>
+    <name>myspringbootapp</name>
     <description>Demo project for Spring Boot with Docker deployment</description>
 
     <properties>

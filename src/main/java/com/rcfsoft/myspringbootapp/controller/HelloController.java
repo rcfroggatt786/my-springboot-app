@@ -1,4 +1,4 @@
-package com.rcfsoft.my-springboot-app.controller;
+package com.rcfsoft.myspringbootapp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +28,7 @@ public class HelloController {
     public Map<String, Object> status() {
         Map<String, Object> response = new HashMap<>();
         response.put("status", "UP");
-        response.put("application", "my-springboot-app");
+        response.put("application", "myspringbootapp");
 
         // Test database connectivity
         try (Connection conn = dataSource.getConnection()) {

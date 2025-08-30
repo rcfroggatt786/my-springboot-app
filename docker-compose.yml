@@ -27,7 +27,7 @@ services:
     mem_limit: 128m
 
   app:
-    image: ghcr.io/${GITHUB_REPOSITORY:-yourusername/my-springboot-app}:${IMAGE_TAG:-latest}
+    image: ghcr.io/${GITHUB_REPOSITORY:-rcfroggatt786/myspringbootapp}:${IMAGE_TAG:-latest}
     container_name: springboot-app
     restart: unless-stopped
     networks:

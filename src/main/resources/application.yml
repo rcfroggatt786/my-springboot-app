@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: my-springboot-app
+    name: myspringbootapp
 
   profiles:
     active: ${SPRING_PROFILES_ACTIVE:local}
@@ -35,7 +35,7 @@ management:
 
 logging:
   level:
-    com.example: INFO
+    com.rcfsoft: INFO
     org.springframework.web: INFO
     org.hibernate.SQL: DEBUG
 
@@ -65,6 +65,6 @@ spring:
 
 logging:
   level:
-    com.example: INFO
+    com.rcfsoft: INFO
     org.springframework.web: WARN
     org.hibernate.SQL: WARN

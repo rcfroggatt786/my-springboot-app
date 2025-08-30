@@ -1,4 +1,4 @@
-package com.rcfsoft.my-springboot-app;
+package com.rcfsoft.myspringbootapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
