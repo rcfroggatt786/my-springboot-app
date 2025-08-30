@@ -103,9 +103,11 @@ jobs:
           # Deploy
           ssh ${{ secrets.LIGHTSAIL_USER }}@${{ secrets.LIGHTSAIL_HOST }} '
             cd ~/myapp &&
+            echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin &&
             export GITHUB_REPOSITORY="${{ github.repository }}" &&
             export IMAGE_TAG="latest" &&
             docker-compose pull app &&
             docker-compose up -d --no-deps app &&
-            docker image prune -f
+            docker image prune -f &&
+            docker logout ghcr.io
           '
